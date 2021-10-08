@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.title h4:after {
+    content: "●";
+    position: absolute;
+    right: -15px;
+    bottom: -2px;
+    color: #4057de;
+    opacity: 1;
+    animation: pulse 1s infinite alternate-reverse;
+}
+
+.title h4 {
+    position: relative;
+    width: fit-content;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.3;
+    }
+}
+
+.anim {
+    color: #4057de;
+    animation: pulse 1s infinite alternate-reverse;
+}
+
+.f-1 {
+    flex: 1;
+}
+
+
+.c-pointer {
+    cursor: pointer;
+}
+
+
+.content h5 {
+    margin-top: 20px;
+}
+
+.p-list .card:hover {
+    box-shadow: 0 0 2px 0 grey;
+}
+
+.addAfter {
+    position: relative;
+}
+
+.addAfter:after {
+    content: " ";
+    position: absolute;
+    left: 2px;
+    width: 5px;
+    border-radius: 5px 0 0 5px;
+    top: 0;
+    height: 100%;
+    background: #4057de;
+}
+
+.image-list img {
+    max-height: 80vh;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.markedTag{
+    background: #5e91cf;
+    color: white;
+}
+
+.tags img{
+    margin-right: 10px;
+}
+
+.btn-primary *{
+    color: white;
+}
+
+.activeClass .btn{
+    background: #5e91cf;
+}
+
+.activeClass *{
+    color: white!important;
+}
+.nav-links .btn{
+    border:solid #5e91cf 2px;
+    color: #5e91cf;
+}
+.mid-item{
+    border-radius: 0 !important;
+    border-width: 2px 0 !important;
+}
+.first-item{
+    border-radius: 0 0 0 25px!important;
+}
+.last-item{
+    border-radius: 0  0 25px 0 !important;
+}
